@@ -3,41 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel = "stylesheet" href = "style.css"/>
-    <link rel="icon" type="image/png"  href="images/Eggy loves you.png">
-    <script src = "script.js"></script>
-    <title> Personal Website </title>
+    <script src = "script.js" defer></script>
 </head>
 <body>
-    <div id = "Home"></div>
-        <section class = "navbar"> 
-            <img class = "Logo" src = "images/Eggy loves you.png"/>
-            <img class = "Logo2" src = "images/cookie.png"/>
-            <a href = "#Home"> Home </a>
-            <a href = "#AboutMe"> About Me </a>
-            <a href = "#Contact"> Contact </a>
+    
+    <nav>
+        <a href = "#Home">Home</a>
+        <a href = "#About_Me">About me</a>
+        <a href = "#Contact">Contact</a>
+        <div class = "progress-container">
+            <div id = "progress" class = "progress"></div>
+        </div>
+    </nav>
+    
+    <header id = "Home">
+        <section id = "myName">
+            Hello I'm Hou Chi Chan
         </section>
-    </div>
-    <div class = "Margin">
-        <section>
-            I'm Hou Chi Chan
+    </header>
+    <main id = "About_Me">
+        <section id = "first" onclick = "Change()"> 
+            <p> <span id = "sortName">Bubble sort</span> through P5 library</p>
+            <br/>
+            <p> Click Me to Change Sorting Method </p>
+            <iframe id = "sorts" src = "bubble_sort/index.html" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
-    </div>
-    <main id = "AboutMe">
-        <section class = "first">
-            <div class = "f1"> Content 1 </div>
+        <section id = "second"> 
+            <div> Who Am I </div>
+            <div> I came from a strictly asian household. <br/>My parent moved to America when I was 6yo. <br/>  From the second I move here I started Elementary school at ps.94 <br/> with an average or probably a C. <br/>Throughout the years I slowly learned English and got into a Good School. <br/> Currently aiming to become a software Engineer. </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <!-- <iframe> </iframe>-->
         </section>
-        <section class = "second">
-            <div class = "f2"> Content 2 </div>
-        </section>
-        <section class = "third">
-            <div class = "f3"> Content 3 </div>
+        <section id = "third"> 
+            <p>
+                My Education:
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.319586421824!2d-73.97890518428805!3d40.688958646961275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb1558a58db%3A0x821e3ed07f1a03bf!2sBrooklyn%20Technical%20High%20School!5e0!3m2!1sen!2sus!4v1596203207019!5m2!1sen!2sus" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </main>
     <footer id = "Contact">
-        <a href = "https://github.com/SciencePotato" target="_blank"> <img src = "images/Git.png"/> </a>
-        <a href = "https://www.linkedin.com/in/hou-chi-chan-4570001b3/" target="_blank"> <img src = "images/Link.png"/> </a>
-        <a> Gmail : Yes </a>
+        <a href = "https://www.linkedin.com/in/hou-chi-chan-4570001b3/" target = "_blank"> Linkedin </a>
+        <a href = "https://github.com/SciencePotato" target = "_blank">  Github</a>
+        <a href = "https://stackoverflow.com/users/13973265/tacoscience" target = "_blank"> Stackoverflow </a>
+        <a>Gmail: Houchi6mail@gmail.com</a>
     </footer>
 </body>
 </html>
