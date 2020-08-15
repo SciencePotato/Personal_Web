@@ -6,17 +6,18 @@
         <title> About Me </title>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "style.css"/>
+        <link rel="icon" type="image/png" href="images/Eggy.png">
     </head>
-    <body onload = "window.location='/#one';">
+    <body onload = "start();">
         <div class = "progress-container">
             <div id = "progress" class = "progress"></div>
         </div>
         <div class = "Nav">
-            <a href = "#one"></a><input onclick ="window.location='/#one';" type="radio" name="slides" value="1" checked/></a>
-            <a href = "#two"><input onclick ="window.location='/#two';"  type="radio" name="slides" value="2"/></a>
-            <a href = "#three"><input onclick ="window.location='/#three';" type="radio" name="slides" value="3"/></a>
-            <a href = "#four"><input onclick ="window.location='/#four';" type="radio" name="slides" value="4"/></a>
-            <a href = "#five"><input onclick ="window.location='/#five';" type="radio" name="slides" value="5"/></a>
+            <a href = "#one"></a><input onclick ="radioclicked('/#one');" type="radio" name="slides" value="1" checked/></a>
+            <a href = "#two"><input onclick ="radioclicked('/#two');"  type="radio" name="slides" value="2"/></a>
+            <a href = "#three"><input onclick ="radioclicked('/#three');" type="radio" name="slides" value="3"/></a>
+            <a href = "#four"><input onclick ="radioclicked('/#four');" type="radio" name="slides" value="4"/></a>
+            <a href = "#five"><input onclick ="radioclicked('/#five');" type="radio" name="slides" value="5"/></a>
         </div>
         <script src = "script.js" defer></script>
         <main id = "one">

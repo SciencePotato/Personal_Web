@@ -5,6 +5,9 @@ window.onscroll = function(){
     progress.style.width = progressHeight + '%';
 };
 
+page = ["/#one","/#two","/#three","/#four","/#five"];
+pageNum = 0;
+
 // SrcCode = ["bubble_sort/index.html","selective_sort/index.html","comb_sort/index.html","Insertion_sort/index.html","radix_sort/index.html"];
 // SortName = ["Bubble Sort", "Selective Sort","Comb Sort","Insertion Sort","Radix Sort"];
 // SrcNum = 1;
@@ -35,3 +38,24 @@ window.onscroll = function(){
         });
     }).scroll();
 })();
+
+
+start = () =>{
+    window.location="/#one";
+    switchPage = setInterval(() =>{
+        pageNum++;
+        window.location = page[pageNum];
+        var radioButtons = document.getElementsByName("slides");
+        radioButtons[pageNum].checked = "checked";
+        if(pageNum == 4){
+            pageNum = -1;
+        }
+    }, 5000);
+
+}
+
+radioclicked = (destination) =>{
+    var radioButtons = document.getElementsByName("slides");
+    window.location = destination;
+    clearInterval(switchPage);
+}

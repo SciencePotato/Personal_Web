@@ -89,16 +89,23 @@ iframe{
     padding-top: 25px;
 }
 #three{
-    background: url("images/Bg6.jpg") repeat fixed 75%;
+    background: url("images/Bg2.jfif") repeat fixed 20%;
+    background-color: rgb(48, 48, 54);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#four{
+    background: url("images/Bg5.jpg") repeat fixed 50%;
     background-color: rgb(48, 48, 54);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*
-    background: url("images/Bg3.jpg") repeat fixed 100%;
+#five{
+    background: url("images/Bg1.jfif") repeat fixed 75%;
+    background-color: rgb(48, 48, 54);
     background-repeat: no-repeat;
-    background-size: auto;
-*/
+    background-size: cover;
+}
 /*#region Body*/
 /*#region Body*/
 /*#region Body*/
@@ -109,7 +116,7 @@ iframe{
     padding: 0px;
     width: 100%;
     height: 1em;
-    background-color: black;
+    background-color: rgb(255, 230, 232);
 }
 .progress{
     position: absolute;
@@ -119,7 +126,7 @@ iframe{
     width: 2rem;
     min-width: 2rem;
     max-width:calc(100% - 0.5em);
-    background-color: white;
+    background-color: rgb(229, 99, 153);
 }
 @media screen and (min-width: 320px) and (max-width: 500px)
 {
