@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "style.css"/>
-    <script src = "script.js" defer></script>
-</head>
-<body>
-    
-    <nav>
-        <a href = "#Home">Home</a>
-        <a href = "#About_Me">About me</a>
-        <a href = "#Contact">Contact</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> About Me </title>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+    <body onload = "window.location='/#one';">
         <div class = "progress-container">
             <div id = "progress" class = "progress"></div>
         </div>
-    </nav>
-    
-    <header id = "Home">
-        <section id = "myName">
-            Hello I'm Hou Chi Chan
-        </section>
-    </header>
-    <main id = "About_Me">
-        <section id = "first" onclick = "Change()"> 
-            <p> <span id = "sortName">Bubble sort</span> through P5 library</p>
-            <br/>
-            <p> Click Me to Change Sorting Method </p>
-            <iframe id = "sorts" src = "bubble_sort/index.html" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-        <section id = "second"> 
-            <div> Who Am I </div>
-            <div> I came from a strictly asian household. <br/>My parent moved to America when I was 6yo. <br/>  From the second I move here I started Elementary school at ps.94 <br/> with an average or probably a C. <br/>Throughout the years I slowly learned English and got into a Good School. <br/> Currently aiming to become a software Engineer. </div>
-            <div> </div>
-            <div> </div>
-            <div> </div>
-            <!-- <iframe> </iframe>-->
-        </section>
-        <section id = "third"> 
-            <p>
-                My Education:
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.319586421824!2d-73.97890518428805!3d40.688958646961275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb1558a58db%3A0x821e3ed07f1a03bf!2sBrooklyn%20Technical%20High%20School!5e0!3m2!1sen!2sus!4v1596203207019!5m2!1sen!2sus" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-    </main>
-    <footer id = "Contact">
-        <a href = "https://www.linkedin.com/in/hou-chi-chan-4570001b3/" target = "_blank"> Linkedin </a>
-        <a href = "https://github.com/SciencePotato" target = "_blank">  Github</a>
-        <a href = "https://stackoverflow.com/users/13973265/tacoscience" target = "_blank"> Stackoverflow </a>
-        <a>Gmail: Houchi6mail@gmail.com</a>
-    </footer>
-</body>
+        <div class = "Nav">
+            <a href = "#one"></a><input onclick ="window.location='/#one';" type="radio" name="slides" value="1" checked/></a>
+            <a href = "#two"><input onclick ="window.location='/#two';"  type="radio" name="slides" value="2"/></a>
+            <a href = "#three"><input onclick ="window.location='/#three';" type="radio" name="slides" value="3"/></a>
+            <a href = "#four"><input onclick ="window.location='/#four';" type="radio" name="slides" value="4"/></a>
+            <a href = "#five"><input onclick ="window.location='/#five';" type="radio" name="slides" value="5"/></a>
+        </div>
+        <script src = "script.js" defer></script>
+        <main id = "one">
+            <content>
+                - Hello, I'm Hou Chi Chan -   
+            </content>
+        </main>
+        <main id = "two">
+            <content class = "effect">
+                - My Education - 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.319586421825!2d-73.97890518430543!3d40.688958646961254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb1558a58db%3A0x821e3ed07f1a03bf!2sBrooklyn%20Technical%20High%20School!5e0!3m2!1sen!2sus!4v1597450031714!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class = "effect"></iframe>
+            </content>
+        </main>
+        <main id = "three">
+            <content class = "effect">
+                - Hello, I'm Hou Chi Chan -   
+            </content>
+        </main>
+        <main id = "four">
+            <content class = "effect">
+                - Hello, I'm Hou Chi Chan -   
+            </content>
+        </main>
+        <main id = "five">
+            <content class = "effect">
+                - Hello, I'm Hou Chi Chan -   
+            </content>
+        </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </body>
 </html>
