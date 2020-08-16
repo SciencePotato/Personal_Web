@@ -55,8 +55,8 @@ start = () =>{
 }
 
 radioclicked = (destination) =>{
-    // var radioButtons = document.getElementsByName("slides");
-    // radioButtons[0].checked = "checked";
-    // window.location.href = destination;
+    var radioButtons = document.getElementsByName("slides");
+    radioButtons[0].checked = "checked";
+    window.location.href = destination;
     clearInterval(switchPage);
 }
