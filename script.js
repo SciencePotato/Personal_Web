@@ -41,20 +41,20 @@ pageNum = 0;
 
 
 start = () =>{
-    window.location.href = "#one";
+    window.location = "Personal_Web/#one";
     switchPage = setInterval(() =>{
         pageNum++;
-        window.location.href = page[pageNum];
+        window.location = "Personal_Web/" + page[pageNum];
         var radioButtons = document.getElementsByName("slides");
         radioButtons[pageNum].checked = "checked";
         if(pageNum == 4){
             pageNum = -1;
         }
+        // pageNum = pageNum == 4 ? pageNum - 1 : pageNum ++;
     }, 5000);
 
 }
 
 radioclicked = (destination) =>{
-    window.location.href = destination;
     clearInterval(switchPage);
 }
