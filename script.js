@@ -44,7 +44,7 @@ start = () =>{
     window.location="/#one";
     switchPage = setInterval(() =>{
         pageNum++;
-        window.location = page[pageNum];
+        window.location.href = page[pageNum];
         var radioButtons = document.getElementsByName("slides");
         radioButtons[pageNum].checked = "checked";
         if(pageNum == 4){
@@ -56,6 +56,7 @@ start = () =>{
 
 radioclicked = (destination) =>{
     var radioButtons = document.getElementsByName("slides");
+    radioButtons[0].checked = "checked";
     window.location = destination;
     clearInterval(switchPage);
 }
