@@ -5,7 +5,7 @@ window.onscroll = function(){
     progress.style.width = progressHeight + '%';
 };
 
-page = ["/#one","/#two","/#three","/#four","/#five"];
+page = ["#one","#two","#three","#four","#five"];
 pageNum = 0;
 
 // SrcCode = ["bubble_sort/index.html","selective_sort/index.html","comb_sort/index.html","Insertion_sort/index.html","radix_sort/index.html"];
@@ -55,8 +55,6 @@ start = () =>{
 }
 
 radioclicked = (destination) =>{
-    var radioButtons = document.getElementsByName("slides");
-    radioButtons[0].checked = "checked";
     window.location.href = destination;
     clearInterval(switchPage);
 }
