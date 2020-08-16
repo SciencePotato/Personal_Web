@@ -41,7 +41,7 @@ pageNum = 0;
 
 
 start = () =>{
-    window.location.href="/#one";
+    window.location.href = "Personal_Web/#one";
     switchPage = setInterval(() =>{
         pageNum++;
         window.location.href = page[pageNum];
