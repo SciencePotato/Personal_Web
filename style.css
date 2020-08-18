@@ -94,17 +94,51 @@ iframe{
     background-repeat: no-repeat;
     background-size: auto;
 }
+#three content{
+    text-align: center;
+    position: absolute;
+    margin-top: 200px;
+    left:10%;
+    font-size:75px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 25px;
+}
+#three span{
+    margin: 20px;
+}
+#three iframe{
+    width: 1000px;
+    height: 500px;
+    padding-top: 0px;
+    border: none;
+}
 #four{
     background: url("images/Bg5.jpg") repeat fixed 50%;
     background-color: rgb(48, 48, 54);
     background-repeat: no-repeat;
     background-size: cover;
 }
+#four content{
+    position: absolute;
+    margin-top: 250px;
+    left:40%;
+    font-size:75px;
+    color: rgb(255, 255, 255);
+}
 #five{
     background: url("images/Bg1.jfif") repeat fixed 75%;
     background-color: rgb(48, 48, 54);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#five content{
+    position: absolute;
+    margin-top: 650px;
+    left:10%;
+    font-size:75px;
+    color: rgb(255, 255, 255);
 }
 /*#region Body*/
 /*#region Body*/

@@ -1,7 +1,7 @@
 
 
 function setup(){
-    createCanvas(425,250);
+    createCanvas(975,480);
 
     DataArray = [];
 

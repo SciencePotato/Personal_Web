@@ -1,5 +1,5 @@
 function setup(){
-    createCanvas(425,225);
+    createCanvas(975,480);
     DataArray = [];
     for(var i = 0; i < width; i ++){
         DataArray.push(random(height));

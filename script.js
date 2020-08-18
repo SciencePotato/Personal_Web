@@ -8,21 +8,21 @@ window.onscroll = function(){
 page = ["#one","#two","#three","#four","#five"];
 pageNum = 0;
 
-// SrcCode = ["bubble_sort/index.html","selective_sort/index.html","comb_sort/index.html","Insertion_sort/index.html","radix_sort/index.html"];
-// SortName = ["Bubble Sort", "Selective Sort","Comb Sort","Insertion Sort","Radix Sort"];
-// SrcNum = 1;
-// let sort = document.getElementById("sorts");
-// let sortN = document.getElementById("sortName");
-// function Change() {
-//     sort.src = SrcCode[SrcNum];
-//     sortN.innerHTML = SortName[SrcNum];
-//     if(SrcNum != SrcCode.length - 1){
-//         SrcNum++;
-//     }
-//     else{
-//         SrcNum = 0;
-//     }
-// }
+SrcCode = ["bubble_sort/index.html","selective_sort/index.html","comb_sort/index.html","Insertion_sort/index.html","radix_sort/index.html"];
+SortName = ["Bubble Sort", "Selective Sort","Comb Sort","Insertion Sort","Radix Sort"];
+SrcNum = 1;
+let sort = document.getElementById("sorts");
+let sortN = document.getElementById("sortName");
+function Change() {
+    sort.src = SrcCode[SrcNum];
+    sortN.innerHTML = SortName[SrcNum];
+    if(SrcNum != SrcCode.length - 1){
+        SrcNum++;
+    }
+    else{
+        SrcNum = 0;
+    }
+}
 
 (function () {
     $(window).scroll(function() {
@@ -39,7 +39,6 @@ pageNum = 0;
     }).scroll();
 })();
 
-
 start = () =>{
     window.location.href = "#one";
     switchPage = setInterval(() =>{
@@ -52,7 +51,6 @@ start = () =>{
         }
         // pageNum = pageNum == 4 ? pageNum - 1 : pageNum ++;
     }, 5000);
-
 }
 
 radioclicked = (destination) =>{
